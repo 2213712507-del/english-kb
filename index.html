@@ -493,22 +493,20 @@ body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans G
     align-self: start;
   }
 
-  /* 最近的词标题和单词：左栏，第4行 */
-  #home-recent-title,
-  #recent-words-row {
+  /* 最近学的词区域：左栏，第4行，黄色背景 */
+  #home-recent-section {
     grid-column: 1 / 2;
     grid-row: 4;
+    background: var(--ym);
+    border-radius: var(--r);
+    padding: 16px;
   }
 
-  /* 最近的词标题：靠下对齐 */
   #home-recent-title {
-    align-self: end;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
   }
 
-  /* 最近的词单词：靠上对齐 */
   #recent-words-row {
-    align-self: start;
     overflow: visible;
   }
 
@@ -1125,8 +1123,6 @@ textarea,[contenteditable=true],
         <p>已完成 <span id="today-done">0</span> / <span id="today-total">5</span> 个知识点</p>
         <button class="btn-p" onclick="showPage('page-review')">开始复习 →</button>
       </div>
-      <div class="section-title" id="home-recent-title"><span>📖 最近学的词</span><span class="sa" onclick="showPage('page-kb')">全部 ›</span></div>
-      <div class="recent-words" id="recent-words-row"><div class="word-chip pulse">加载中...</div></div>
       <div class="section-title" id="home-cat-title"><span>🗂️ 知识分类</span></div>
       <div class="card-b home-cat-card" onclick="showKbFilter('词汇')" style="cursor:pointer;">
         <div style="display:flex;align-items:center;gap:12px;">
@@ -1148,6 +1144,10 @@ textarea,[contenteditable=true],
           <div><div style="font-weight:700;font-size:15px;">我的录入</div><div style="font-size:12px;color:var(--ts);margin-top:3px;" id="cat-entries-count">0 条自定义知识</div></div>
           <div style="margin-left:auto;color:var(--th);">›</div>
         </div>
+      </div>
+      <div id="home-recent-section">
+        <div class="section-title" id="home-recent-title"><span>📖 最近学的词</span><span class="sa" onclick="showPage('page-kb')">全部 ›</span></div>
+        <div class="recent-words" id="recent-words-row"><div class="word-chip pulse">加载中...</div></div>
       </div>
     </div>
     <div class="bnav">
