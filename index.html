@@ -498,15 +498,13 @@ body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans G
     grid-column: 2 / 3;
     grid-row: 3;
     align-self: end;
-    margin-bottom: 4px;
   }
 
-  /* 最近的词：右栏，与标题同行，在标题下方 */
+  /* 最近的词：右栏，第4行 */
   #recent-words-row {
     grid-column: 2 / 3;
-    grid-row: 3;
+    grid-row: 4;
     overflow: visible;
-    align-self: start;
   }
 
   /* 桌面端：最近学的词不需要滚动，直接换行显示 */
@@ -809,7 +807,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans G
 .stat-item{background:var(--w);border-radius:var(--rs);padding:14px;box-shadow:var(--sc);text-align:center}
 .stat-item .val{font-size:28px;font-weight:800;color:var(--yd)}
 .stat-item .lbl{font-size:11px;color:var(--ts);margin-top:2px}
-.section-title{font-size:16px;font-weight:700;margin:20px 0 10px;display:flex;align-items:center;justify-content:space-between}
+.section-title{font-size:14px;font-weight:700;margin:8px 0 6px;display:flex;align-items:center;justify-content:space-between}
 .section-title .sa{font-size:12px;color:var(--yd);font-weight:500;cursor:pointer}
 .today-plan{background:var(--ym);border-radius:var(--r);padding:20px;margin-bottom:12px;position:relative;overflow:hidden}
 .today-plan::after{content:'📚';position:absolute;right:16px;top:50%;transform:translateY(-50%);font-size:48px;opacity:.3}
@@ -818,7 +816,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans G
 .btn-p{background:var(--tp);color:var(--w);border:none;border-radius:24px;padding:10px 24px;font-size:14px;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
 .btn-p:active{transform:scale(.95)}
 .btn-p.y{background:var(--ym);color:var(--tp)}
-.recent-words{display:flex;gap:8px;overflow-x:auto;overflow-y:hidden;padding:4px 0;flex-wrap:nowrap;min-height:auto;align-items:center;box-sizing:border-box}
+.recent-words{display:flex;gap:8px;overflow-x:auto;overflow-y:hidden;padding:2px 0;flex-wrap:nowrap;min-height:auto;align-items:center;box-sizing:border-box}
 .recent-words::-webkit-scrollbar{display:none}
 .word-chip{background:var(--w);border:2px solid var(--yl);border-radius:20px;padding:8px 16px;font-size:13px;font-weight:600;white-space:nowrap;cursor:pointer;box-shadow:var(--sc);flex-shrink:0;line-height:1.2}
 .word-chip:active{background:var(--yl)}
