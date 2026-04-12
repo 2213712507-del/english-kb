@@ -497,13 +497,16 @@ body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans G
   #home-recent-title {
     grid-column: 2 / 3;
     grid-row: 3;
+    align-self: end;
+    margin-bottom: 4px;
   }
 
-  /* 最近的词：右栏，第4行 */
+  /* 最近的词：右栏，与标题同行，在标题下方 */
   #recent-words-row {
     grid-column: 2 / 3;
-    grid-row: 4;
+    grid-row: 3;
     overflow: visible;
+    align-self: start;
   }
 
   /* 桌面端：最近学的词不需要滚动，直接换行显示 */
