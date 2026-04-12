@@ -506,7 +506,11 @@ body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans G
     grid-column: 2 / 3;
     grid-row: 4;
     overflow: visible;
-    margin-top: 0;
+    margin: 0;
+    align-self: start;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
   }
 
   /* 桌面端：最近学的词不需要滚动，直接换行显示 */
@@ -515,13 +519,6 @@ body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans G
     flex-wrap: wrap !important;
     overflow-y: visible !important;
     max-height: none !important;
-  }
-  
-  /* 桌面端：最近学的词容器 */
-  #page-home #recent-words-row {
-    min-height: auto !important;
-    height: auto !important;
-    overflow: visible !important;
   }
 
   /* 知识分类标题：右栏，第5行 */
